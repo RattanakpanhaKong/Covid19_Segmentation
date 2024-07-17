@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader
 import torch.nn.functional as F
 from dataset import XRayDataset, get_transforms
 from unet import UNet
-from utils import dice_loss
+from py.utils import dice_loss
 
 
 def train_model(image_dir, mask_dir, epochs=10, batch_size=4, lr=1e-4):
